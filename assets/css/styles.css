@@ -11,6 +11,16 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+/* Common */
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
 h1,
 h2,
 h3,
@@ -32,4 +42,60 @@ button {
     width: 1170px;
     max-width: calc(100% - 48px);
     margin: 0 auto;
+}
+
+.btn {
+    --height:56px;
+    display: inline-block;  
+    min-width: 130px;
+    height: var(--height);
+    line-height: var(--height);
+    border: 1px solid rgb(0, 9, 88, 0.7);
+    border-radius: 99px;
+    font-weight: 600;
+    font-size: 1.4rem;
+    text-align: center;
+    color: #000958;
+    transition: 0.3s ease-in-out;
+}
+
+/* Header */
+
+.header {
+    padding: 26px 0;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar__list {
+    display: flex;
+}
+
+.navbar__link {
+    padding: 8px 18px;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1;
+    color: #5E6085;
+}
+
+.navbar__link:hover {
+    text-shadow: 1px 0 0 currentColor;
+    color: #000958;
+}
+
+.header-action__btn {
+    --height:50px;
+    min-width: 118px;
+    height: var(--height);
+}
+
+.header-action__link:hover{
+    background: #000958;
+    color: #fff;
+    border: none;
 }
