@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: #ff5b2e;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -28,7 +32,6 @@ h3,
 h4,
 h6 {
     font-family: "Sora", sans-serif;
-
 }
 
 input,
@@ -46,8 +49,10 @@ button {
 }
 
 .btn {
-    --height:56px;
-    display: inline-block;  
+    --height: 56px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     min-width: 130px;
     height: var(--height);
     line-height: var(--height);
@@ -58,6 +63,28 @@ button {
     text-align: center;
     color: #000958;
     transition: 0.3s ease-in-out;
+}
+
+.btn__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.btn--primary {
+    color: #fff;
+    background: var(--primary-color);
+    border-color: var(--primary-color);
 }
 
 /* Header */
@@ -90,12 +117,12 @@ button {
 }
 
 .header-action__btn {
-    --height:50px;
+    --height: 50px;
     min-width: 118px;
     height: var(--height);
 }
 
-.header-action__link:hover{
+.header-action__link:hover {
     background: #000958;
     color: #fff;
     border: none;
@@ -104,17 +131,21 @@ button {
 /* Hero */
 
 .hero {
-    margin: 74px;
+    margin-top: 74px;
 }
+
 
 .hero__inner {
     display: flex;
     align-items: center;
-    justify-content: space-between
+    justify-content: space-between;
+    column-gap: 120px;
 }
+
 
 .hero__media {
     position: relative;
+
     display: flex;
     padding-bottom: 94px;
 }
@@ -123,11 +154,13 @@ button {
     position: relative;
     display: flex;
     align-items: flex-end;
+    justify-content: center;
     width: 388px;
     height: 488px;
-    background: #FE997B;
+    background: #fe997b;
     border-radius: 16px;
-    border: 3px solid white;
+    border: 3px solid #fff;
+    ;
 }
 
 .hero__img {
@@ -153,23 +186,23 @@ button {
 
 .hero__img-wrap-small {
     align-self: flex-end;
-    width: 184px;
+    width: 186px;
     height: 244px;
-    margin: 0 0 -58px -24px;
+    background: #FAA7AD;
     border: 2px solid #f7dddf;
-    background: #faa7ad;
+    margin: 0 0 -58px -24px;
 }
 
 .hero__list {
     position: absolute;
-    left: 129px;
     bottom: 0;
+    left: 129px;
     width: 250px;
-    height: 190px;
-    padding: 18px 14px;
-    background: #fff;
+    height: 156px;
     border-radius: 10px;
-    box-shadow: -17px 14px 68px -4px #CFAE8440;
+    background: #FFFFFF;
+    box-shadow: -17px 14px 68px -4px rgba(207, 174, 132, 0.25);
+    padding: 18px 14px;
 }
 
 .hero-list-item {
@@ -194,27 +227,65 @@ button {
     font-size: 1.4rem;
     line-height: 1;
     color: #181E52;
-
 }
 
-.hero-list-item__skeletion {
+.hero-list-item__skeleton {
     margin-top: 6px;
-    width: var(--width, 118px);
+    width: var(--width,118px);
     height: 4px;
-    opacity: 0.08;
-    background: #000958;
     border-radius: 10px;
+    opacity: 0.08;
+    background:#000958;
 }
 
-.hero-list-item__separate {
+.hero-list-item__separete {
     display: block;
+    margin: 20px 0;
     width: 100%;
     height: 2px;
-    margin: 20px 0;
-    border: 2px solid #F2F2F2;
-    background: #F2F2F2;
+    background:#F2F2F2;
+    border-radius: 99px;
 }
 
-.hero__list-item:nth-of-type(2) .hero-list-item__thumb{
-    background: #6597C2;
+.hero-list-item:nth-of-type(2) .hero-list-item__thumb {
+    background: #c6e2fa;
+}
+
+.hero__heading {
+    margin: 0;
+    font-weight: 800;
+    font-size: 6.6rem;
+    line-height: 1.15;
+    color: #000958;
+}
+
+.hero__desc {
+    width: 391px;
+    margin-top: 24px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.88;
+    color: #656689;
+}
+
+.hero__row {
+    display: flex;
+    align-items: center;
+    margin-top: 38px;
+}
+
+.hero__cta-btn {
+    --height:60px;
+    min-width: 190px;
+    font-size: 1.6rem;
+    box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
+}
+
+.hero__cta-link {
+    margin-left: 24px;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1;
+    text-decoration: underline;
+    color: #000958;
 }
