@@ -85,7 +85,7 @@ button {
     color: #000958;
 }
 
-.section-desc{
+.section-desc {
     margin-top: 24px;
     font-weight: 400;
     font-size: 16px;
@@ -506,7 +506,7 @@ button {
 
 .tab__list {
     position: relative;
-    display: flex;
+    display: inline-flex;
     column-gap: 56px;
 }
 
@@ -542,7 +542,7 @@ button {
 }
 
 .tab__title {
-    font-family: Sora,sans-serif;
+    font-family: Sora, sans-serif;
     font-weight: 600;
     font-size: 1.8rem;
     line-height: 1;
