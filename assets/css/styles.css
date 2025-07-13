@@ -32,7 +32,6 @@ h3,
 h4,
 h6 {
     font-family: "Sora", sans-serif;
-    margin: 0;
 }
 
 input,
@@ -311,12 +310,17 @@ button {
 /* About */
 
 .about {
-    margin-top: 207px;
+    margin-top: 138px;
 }
 
 .about__inner {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.about__media {
+    position: relative;
 }
 
 .about__label {
@@ -369,4 +373,67 @@ button {
     top: 4px;
     left: 3px;
     content: url(../icons/Check.svg)
+}
+
+.about__card {
+    position: absolute;
+    top: 155px;
+    left: 0;
+    padding: 30px 26px ;
+    width: 136px;
+    opacity: 1;
+    border-radius: 10px;
+    background: #5BD6E2;
+    box-shadow: -15px 26px 48px 0px rgba(85, 240, 255, 0.17);
+    text-align: center;
+}
+
+.about__card-title {
+    font-family: Sora,sans-serif;
+    font-weight: 700;
+    font-size: 4.2rem;
+    line-height: 1;
+    color: #FFFFFF;
+}
+
+.about__card-desc {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.43;
+    color: #C6F4F9;
+}
+
+.about__card-decor {
+    position: absolute;
+    top: -39px;
+    right: -32px;
+}
+
+.about__img-warp {
+    position: relative;
+    width: 494px;
+    margin-left: auto;
+}
+
+.about__img-warp::after{
+    position: absolute;
+    height: 336px;
+    inset: auto 0 0 0;
+    content: "";
+    border-radius: 16px;
+    background: linear-gradient(180deg, #FCE0EF 0%, #FAC3D1 100%);
+    z-index: -1;
+}
+
+.about__img {
+    width: 450px;
+    display: block;
+    margin: 0 auto;
+}
+
+.about__media-decor {
+    position: absolute;
+    top: 149px;
+    right: -50px;
+    z-index: -1;
 }
