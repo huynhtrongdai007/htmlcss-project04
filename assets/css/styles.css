@@ -624,19 +624,24 @@ button {
 }
 
 .service-item__heading {
+    position: relative;
     font-family: Sora, sans-serif;
     font-weight: 600;
     font-size: 2.2rem;
     line-height: 1;
     color: #000958;
     margin-bottom: 18px;
+    padding-left: 12px;
 }
 
 .service-item__heading::before {
+    position: absolute;
+    inset: 0 auto 0 0;
     content: '';
-    width: 22px;
-    border: 2px solid;
-    border-image-source: linear-gradient(89.89deg, #FF5B2E 0.39%, #FFA187 100.29%);
+    display: inline-block;
+    width: 2px;
+    border-radius: 1px;
+    background: linear-gradient(#FF5B2E, #FFA187);
 
 }
 
@@ -696,11 +701,6 @@ button {
 
 .service__cta {
     min-width: 214px;
-    padding: 20px 40px;
-    font-weight: 500;
-    font-size: 1.6rem;
-    line-height: 1;
-    text-align: center;
     color: #FF5B2E;
-    border: 1px solid #FF5B2E
+    border-color:#FF5B2E;
 }
