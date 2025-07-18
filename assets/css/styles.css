@@ -140,7 +140,7 @@ button {
 }
 
 .header-action__link:hover {
-    background: #000958;
+    background: var(--primary-color);
     color: #fff;
     border: none;
 }
