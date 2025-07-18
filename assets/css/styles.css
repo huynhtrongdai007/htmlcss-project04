@@ -832,6 +832,7 @@ button {
 .pricing__container {
     width: 994px;
 }
+
 /* Pricing */
 
 .pricing {
@@ -948,7 +949,7 @@ button {
 }
 
 .pricing-item__btn {
-    --height:44px;
+    --height: 44px;
     margin-top: 22px;
     width: 100%;
     border: 1px solid #FF5B2E99;
@@ -972,7 +973,7 @@ button {
 
 .pricing-item__item::before {
     content: url(../icons/pricing-check.svg);
-    margin-right: 14px  ;
+    margin-right: 14px;
 }
 
 /* Review */
@@ -1002,7 +1003,7 @@ button {
 .review__control:hover {
     color: #fff;
     background: #FF5B2E;
-    border-color:#FF5B2E;
+    border-color: #FF5B2E;
     cursor: pointer;
 }
 
@@ -1135,9 +1136,9 @@ button {
     color: #FF5B2E;
 }
 
-.blog__list{
+.blog__list {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 48px;
     margin-top: 54px;
 }
@@ -1190,4 +1191,90 @@ button {
     font-size: 1.4rem;
     line-height: 1.71;
     color: #656689;
+}
+
+/* Footer */
+
+.footer {
+    margin-top: 53px;
+    background: #FFF6ED;
+
+}
+
+.footer__inner {
+    display: flex;
+}
+
+.footer__left {
+    padding: 114px 0 148px;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 268px;
+    height: 46px;
+    margin: 35px 0 68px;
+    border-radius: 99px;
+    background: #FFFFFF;
+    border: 1px solid rgba(255, 91, 46, 0.25);
+}
+
+.search-form__input {
+    width: 100%;
+    height: 100%;
+    padding: 0 22px;
+    border-radius: inherit;
+    border: none;
+    outline: none;
+}
+
+.search-form__submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 46px;
+    height: 46px;
+    margin-right: -1px;
+    background: #FF5B2E;
+    box-shadow: 0px 15px 28px -7px rgba(255, 91, 46, 0.3);
+    color: #fff;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+}
+
+.search-form__submit:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.footer__heading {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.11;
+    color: #000958;
+}
+
+.social__list {
+    display: flex;
+    column-gap: 16px;
+    margin-top: 16px;
+}
+
+.social-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #fff;
+
+}
+
+.social-item:hover {
+    opacity: 0.9;
 }
