@@ -139,10 +139,13 @@ button {
     height: var(--height);
 }
 
+.header-action__link {
+    border-color: var(--primary-color);
+}
+
 .header-action__link:hover {
     background: var(--primary-color);
     color: #fff;
-    border: none;
 }
 
 /* Hero */
